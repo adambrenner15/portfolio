@@ -9,7 +9,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 98;
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
   }
@@ -18,7 +18,8 @@ ul{
     margin: 0;
     padding: 0;
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    font-size: 89%;
 }
 
 h1{
@@ -29,14 +30,15 @@ h1{
 
 h2{
     margin: 0;
-    padding: 5px;
+    padding: 2px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    box-shadow: 0 0.5px 4px rgba(53, 73, 94, 0.178)
 }
 
 h3{
-    padding-top: 50px;
+    padding-top: 30px;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
@@ -58,12 +60,12 @@ img{
 }
 img.top{
     display: block;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
-    box-shadow: 0 1px 4px rgba(146,161,176,.15)
+    box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 #current{
     border-bottom: 2px solid rgb(73, 100, 255);
@@ -77,6 +79,13 @@ img.top{
     align-content: baseline;
 }
 
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(76,auto);
+    overflow: hidden;
+}
+
 .track{
     padding: 10px;
     max-height: 350px;
@@ -87,6 +96,9 @@ a{
     text-decoration: none;
     color: rgb(73, 100, 255);
 }
+p.resume{
+    text-align: left;
+}
 a:hover{
     color: rgb(72, 120, 192);
 }
@@ -95,12 +107,26 @@ a:hover{
     color:rgb(255, 8, 0)
 }
 
+h4{
+    padding-left: 5px;
+    color: rgb(3, 4, 80);
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+li{
+    padding-left: 10px;
+    padding-right: 2px;
+    color: rgb(3, 4, 80);
+}
+
 .nav_links{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 strong{
     font-weight: bolder;
     font-style: italic;
@@ -132,10 +158,28 @@ strong{
     color: rgb(3, 4, 80);
     font-weight: bolder;
 }
+.resume_header{
+    text-align: left;
+    box-shadow: black;
+}
 
 .grid-container {
     display: grid;
   }
+input
+.skip{
+    position: absolute;
+    top: -50px;
+    color:black;
+}
+
+.skip:focus{
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    padding: 0.5em;
+    margin-top: 4.5em;
+}
 
 .footer{
     background-color: rgb(3, 4, 80);
