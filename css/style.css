@@ -8,7 +8,6 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 98;
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
@@ -38,7 +37,8 @@ h2{
 }
 
 h3{
-    padding-top: 35px;
+    
+    padding-top: 40px;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
@@ -82,8 +82,8 @@ img.top{
 .grid_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(76,auto);
-    overflow: hidden;
+    grid-template-rows: repeat(10,auto);
+    
 }
 
 .track{
@@ -93,7 +93,7 @@ img.top{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(73, 100, 255);
 }
 p.resume{
@@ -163,10 +163,7 @@ strong{
     box-shadow: black;
 }
 
-.grid-container {
-    display: grid;
-  }
-input
+
 .skip{
     position: absolute;
     top: -50px;
@@ -183,10 +180,14 @@ input
 
 .footer{
     background-color: rgb(3, 4, 80);
+    margin-top: 3em;
     color: #fff;
     text-align: center;
-    padding: 20px
+    padding: 20px;
+    bottom:0;
+    position: relative;
   }
+
   .footer__title{
     font-size: 2rem;
     margin-bottom: 0;
@@ -202,3 +203,22 @@ input
     color: #fff;
     margin: 0 0;
   }
+
+.bounce_button{
+    grid-column: 2 / span 5;
+    grid-row: 3 / span 5;
+    background-color: rgb(32, 202, 117);
+    padding: 0.3em;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 1em;
+    z-index: 100;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 2em;
+    margin-left: 2em;
+}
