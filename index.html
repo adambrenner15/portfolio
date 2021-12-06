@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="imgs/ab.jpg">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<title>Portfolio | Adam Brenner</title>
 </head>
 <body>
@@ -58,6 +59,44 @@
 				</p>
 			</div>
 		</section>
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+			<!-- Slides -->
+				<div class="swiper-slide" style="background-image: url(https://zawada.art/wp-content/uploads/2018/08/crownofthorns3.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(https://i.scdn.co/image/ab67616d0000b273f051a314bb7eaa973c795176);"></div>
+				<div class="swiper-slide" style="background-image: url(https://payload.cargocollective.com/1/4/158872/9666476/Tame-Impala-Currents-final-packshot-1200px_800.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(https://soundsoftheuniverse.com/img/NG9qTzh4ZldMMTRlV244R2pKa2t6QT09/0bd4b1846ba3890f574810dbeddddf8c-500x500x1-grande.png);"></div>
+				<div class="swiper-slide" style="background-image: url(https://m.media-amazon.com/images/I/91dHRGIV65L._SL1500_.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(https://i1.sndcdn.com/avatars-000387447461-h5k11l-t500x500.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(https://m.media-amazon.com/images/I/91laqXUGVKL._SS500_.jpg);"></div>
+				<div class="swiper-slide" style="background-image: url(https://external-preview.redd.it/r6jqKZALjnz2lIZg9PQMIzUU1pU1mGmqltaSm7PZSu0.jpg?auto=webp&s=cddbded891348d3158e237fa76f46d7aa5c6f4a8);"></div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<p class="center">
+			If you enjoy music, here are some of my favorite albums!
+		</p>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			effect: 'cube',
+				grabCursor: true,
+				CubeEffect: {
+					shadow: true,
+					slideShadows: true,
+					shadowOffset: 20,
+					shadowScale: 0.94,
+				},
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			});
+		</script>
+		
 	</main>
 
 	<footer>
