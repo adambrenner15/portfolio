@@ -1,6 +1,14 @@
 html{
     height: 100%;
 }
+iframe{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: none;
+        min-height: 500px;
+        padding: 30px
+}
 button{
     text-decoration: none;
     border: none;
@@ -307,20 +315,14 @@ footer p{
     background-repeat: no-repeat;
     background-size:cover;
   }
-
-.spotter_overview{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.spotter_images_chris{
-    grid-row: 1/2;
-    grid-column: 2/7;
+  .spotter_images_chris{
+    grid-column: 2/10;
+    padding: 10px;
     background-color: rgb(144, 188, 255);
     border: 1px solid black;
 }
 .spotter_images_mic{
-    grid-column: 8/13;
-    grid-row: 1/2;
+    grid-column: 2/10;
     background-color:rgb(144, 188, 255);
     border: 1px solid black;
 }
@@ -461,9 +463,6 @@ footer p{
         max-width: 450px;
     }
     .contact_me {
-        border-radius: 10px;
-        border: 1px solid black;
-        background-color: rgb(224, 224, 224);
         padding: 20px;
         grid-column-start: 2;
         grid-column-end: 13;
@@ -473,6 +472,21 @@ footer p{
     .contact_text{
         padding-left: 120px;
         padding-right: 120px;
+    }
+    .spotter_overview{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .spotter_images_chris{
+        grid-row: 1/2;
+        grid-column: 2/7;
+    }
+    .spotter_images_mic{
+        grid-column: 8/13;
+        grid-row: 1/2;
+    }
+    iframe{
+        min-height: 600px;
     }
 }
 @media (prefers-reduced-motion) {
