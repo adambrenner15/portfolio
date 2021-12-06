@@ -368,7 +368,7 @@ footer p{
   /* Style the back side */
   .flip-card-back {
     background-color: transparent;
-    color: #000000;
+    color: black;
     transform: rotateY(180deg);
   }
 
