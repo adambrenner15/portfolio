@@ -28,6 +28,7 @@ body{
     color: rgb(0, 0, 0);
     margin: 0;
     height: 100%;
+    background-color: white;
 }
 
   nav{
@@ -367,7 +368,6 @@ footer p{
   
   /* Style the back side */
   .flip-card-back {
-    background-color: transparent;
     color: black;
     transform: rotateY(180deg);
   }
